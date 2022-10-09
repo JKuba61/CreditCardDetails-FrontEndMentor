@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <script defer src="/main.js""></script>
+<body>
+
+  <section class=" card-box">
+    <img src="/images/bg-card-back.png" alt="" class="card-box__card card-box__card-back">
+    <img src="/images/bg-card-front.png" alt="" class="card-box__card card-box__card-front">
+    <div class="card-box__decoration card-box__data">
+      <div class="card-box__white-ball ball"></div>
+      <div class="card-box__transparent-ball ball"></div>
+    </div>
+
+    <p class="card-box__cvc card-box__data">000</p>
+    <p class="card-box__number card-box__data">0000 0000 0000 0000</p>
+    <p class="card-box__name card-box__data">Jane Appleseed</p>
+    <p class="card-box__exp-date card-box__data"><span class="card-box__mm">00</span>/<span class="card-box__yy">00</span></p>
+  </section>
+  <section class="cardholder active">
+    <form class="cardholder__form" action="">
+
+      <div class="cardholder__box">
+        <label class="cardholder__label" for="name">cardholder name</label>
+        <input type="text" id="name" class="cardholder__input" placeholder="e.g. Jane Appleseed">
+        <p class="error error--name">Cant be blank!</p>
+      </div>
+
+      <div class="cardholder__box">
+        <label class="cardholder__label" for="number">card number</label>
+        <input type="text" id="number" class="cardholder__input" placeholder=" e.g. 1234 5678 9123 0000">
+        <p class="error error--number">Cant be blank!</p>
+      </div>
+
+      <div class="cardholder__box--row">
+        <div class="cardholder__box">
+          <label class="cardholder__label" for="exp"> Exp. Date (MM/YY)</label>
+          <div class="cardholder__box--row cardholder__box--date" id="exp">
+            <input type="text" id="mm" class="cardholder__input cardholder__input--date" placeholder="MM">
+            <input type="text" id="yy" class="cardholder__input cardholder__input--date" placeholder="YY">
+          </div>
+          <p class="error error--mm error--yy">Cant be blank!</p>
+        </div>
+        <div class="cardholder__box">
+          <label class="cardholder__label" for="cvc">cvc</label>
+          <input type="text" id="cvc" class="cardholder__input cardholder__input--cvc" placeholder="e.g. 123">
+          <p class="error error--cvc">Cant be blank!</p>
+        </div>
+      </div>
+
+      <button class="cardholder__btn btn">Confirm</button>
+    </form>
+  </section>
+  <section class="completed">
+    <div class="completed__box">
+      <div class="completed__approved ball">✓</div>
+      <h2 class="completed__header">Thank you!</h2>
+      <p class="completed__text">We've added your card details</p>
+      <button class="completed__btn btn">Continue</button>
+    </div>
+  </section>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

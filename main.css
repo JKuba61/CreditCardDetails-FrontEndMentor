@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.btn {
+  padding: 1em 2em;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: rgb(40, 31, 58);
+  transition: background-color 0.3s;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(57, 40, 92);
+}
+
+.ball {
+  border-radius: 50%;
+}
+
+.error {
+  color: hsl(0deg, 100%, 66%);
+  font-size: 12px;
+  opacity: 0;
+}
+
+.card-box {
+  position: relative;
+  background-image: url("/images/bg-main-mobile.png");
+  background-size: cover;
+  height: 35%;
+  color: #fff;
+}
+.card-box__card {
+  position: absolute;
+  width: 230px;
+}
+.card-box__card-back {
+  top: 30px;
+  right: 10px;
+}
+.card-box__card-front {
+  bottom: -30px;
+  left: 10px;
+}
+.card-box__data {
+  position: absolute;
+  font-size: 12px;
+}
+.card-box__cvc {
+  right: 35px;
+  top: 85px;
+}
+.card-box__name {
+  left: 20px;
+  bottom: -20px;
+}
+.card-box__number {
+  bottom: 5px;
+  left: 20px;
+  font-size: 18px;
+}
+.card-box__exp-date {
+  left: 195px;
+  bottom: -20px;
+}
+.card-box__decoration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  bottom: 60px;
+  left: 25px;
+}
+.card-box__white-ball {
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+}
+.card-box__transparent-ball {
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #fff;
+}
+
+.cardholder {
+  display: none;
+  margin: 4em 1em 0;
+}
+.cardholder__form {
+  display: flex;
+  flex-direction: column;
+}
+.cardholder__box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.2em;
+}
+.cardholder__box--row {
+  display: flex;
+  flex-direction: row;
+}
+.cardholder__box--date {
+  width: 50%;
+}
+.cardholder__label {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.cardholder__input {
+  padding: 0.6em;
+  border: 1px solid #e5e5e5;
+  font-family: "Space Grotesk", sans-serif;
+  border-radius: 6px;
+}
+.cardholder__input--date {
+  width: 60px;
+  margin-right: 0.5em;
+}
+.cardholder__input--cvc {
+  width: 100%;
+}
+
+.completed {
+  display: none;
+  margin: 4em 1em 0;
+}
+.completed__box {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+.completed__approved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  font-size: 2rem;
+  color: #fff;
+  background-image: linear-gradient(hsl(249deg, 99%, 64%), hsl(278deg, 94%, 30%));
+  border-radius: 50%;
+  border: none;
+}
+
+.show {
+  opacity: 1;
+}
+
+.active {
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 992px) {
+  body {
+    display: flex;
+  }
+  .card-box {
+    height: 100%;
+    width: 300px;
+    background-image: url("/images/bg-main-desktop.png");
+  }
+  .card-box__data {
+    font-size: 14px;
+  }
+  .card-box__card {
+    width: 300px;
+  }
+  .card-box__card-back {
+    top: 500px;
+    right: -150px;
+  }
+  .card-box__card-front {
+    bottom: unset;
+    top: 300px;
+    left: 80px;
+  }
+  .card-box__cvc {
+    right: -118px;
+    top: 572px;
+  }
+  .card-box__name {
+    left: 90px;
+    top: 435px;
+    bottom: unset;
+  }
+  .card-box__number {
+    left: 90px;
+    top: 390px;
+    white-space: nowrap;
+    bottom: unset;
+    font-size: 24px;
+  }
+  .card-box__exp-date {
+    left: 330px;
+    top: 435px;
+    bottom: unset;
+  }
+  .card-box__decoration {
+    display: flex;
+    gap: 10px;
+    bottom: unset;
+    top: 320px;
+    left: 100px;
+  }
+  .card-box__white-ball {
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+  }
+  .card-box__transparent-ball {
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+  }
+  .cardholder {
+    margin: 350px 15em;
+  }
+  .completed {
+    margin: 350px 15em;
+  }
+}/*# sourceMappingURL=main.css.map */
