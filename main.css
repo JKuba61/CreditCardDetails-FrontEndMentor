@@ -38,7 +38,7 @@ body {
 
 .card-box {
   position: relative;
-  background-image: url("/images/bg-main-mobile.png");
+  background-image: url("images/bg-main-mobile.png");
   background-size: cover;
   height: 35%;
   color: #fff;
@@ -180,7 +180,7 @@ body {
   .card-box {
     height: 100%;
     width: 300px;
-    background-image: url("/images/bg-main-desktop.png");
+    background-image: url("images/bg-main-desktop.png");
   }
   .card-box__data {
     font-size: 14px;
